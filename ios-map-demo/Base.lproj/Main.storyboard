@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0r5-n2-GhU">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="hhr-8v-FwS">
+            <objects>
+                <navigationController id="0r5-n2-GhU" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="7qF-oy-pu8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="90d-Re-3oO" kind="relationship" relationship="rootViewController" id="AMj-lm-wec"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XFr-yE-dHB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1750" y="-84"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="HwI-vG-0jG">
+            <objects>
+                <viewController id="90d-Re-3oO" customClass="ViewController" customModule="janowski_final_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0oK-TQ-RnI"/>
+                        <viewControllerLayoutGuide type="bottom" id="U7l-x0-aAX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2OO-si-KR2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="XVv-Va-ta2">
+                                <rect key="frame" x="24" y="72" width="327" height="587"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9H-bC-bvE">
+                                        <rect key="frame" x="0.0" y="0.0" width="327" height="293.5"/>
+                                        <state key="normal" title="Apple Map Demo"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="saR-Mu-Cov"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yzz-hn-E9M">
+                                        <rect key="frame" x="0.0" y="293.5" width="327" height="293.5"/>
+                                        <state key="normal" title="Google Map Demo"/>
+                                        <connections>
+                                            <segue destination="yJw-7a-gKH" kind="show" id="dMF-oe-moj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XVv-Va-ta2" firstAttribute="top" secondItem="0oK-TQ-RnI" secondAttribute="bottom" constant="8" id="4CP-F1-3Cb"/>
+                            <constraint firstItem="XVv-Va-ta2" firstAttribute="leading" secondItem="2OO-si-KR2" secondAttribute="leadingMargin" constant="8" id="K8l-Sr-h85"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XVv-Va-ta2" secondAttribute="trailing" constant="8" id="jBR-O9-g1O"/>
+                            <constraint firstItem="U7l-x0-aAX" firstAttribute="top" secondItem="XVv-Va-ta2" secondAttribute="bottom" constant="8" id="lDc-xJ-El6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xFd-a6-WpZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="glU-ia-mgb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-858" y="-84"/>
+        </scene>
+        <!--Apple Map View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="AppleMapViewController" customModule="janowski_final_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-47" y="-84"/>
+        </scene>
+        <!--Google Map View Controller-->
+        <scene sceneID="Nhy-Ow-Pjh">
+            <objects>
+                <viewController id="yJw-7a-gKH" customClass="GoogleMapViewController" customModule="janowski_final_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="v0R-q5-mpS"/>
+                        <viewControllerLayoutGuide type="bottom" id="BjL-wH-YFT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="x0d-IW-Wol">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q5c-y1-MwM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-858" y="672"/>
+        </scene>
+    </scenes>
+</document>
